@@ -1,0 +1,48 @@
+
+História de Usuário
+
+Personas: 
+URI Judge, Programador iniciante
+
+Modelo inclusivo
+
+História de usuário 
+
+"Eu, sendo [usuário],
+gostaria de [inserir 3 numeros em ponto flutuante]
+para [saber qual é o tipo de triangulo que eles formam]."
+
+"AS, I WOULD LIKE, IN ORDER TO"
+
+Critérios de aceitação:
+a. O valor A (0 < A)
+b. O valor B (0 < B)
+c. O valor C (0 < C)
+
+
+Testes:
+x. {(7.0 5.0 7.0) -> ("TRIANGULO ACUTANGULO TRIANGULO ISOSCELES")}
+y. {(6.0 6.0 10.0) -> ("TRIANGULO OBTUSANGULO TRIANGULO ISOSCELES")}
+z. {(5.0 7.0 2.0) -> ("NAO FORMA TRIANGULO")}
+
+Gherkin
+
+"Given, When, Then"
+"Dado, Quando, Então"
+
+Dado [os valores de :a , :b e :c]
+Quando [solicitar o tipo de triangulo]
+Então [o resultado será printado na tela].
+a   |  b  |  c  | saida
+7.0 | 5.0 | 7.0 | TRIANGULO ACUTANGULO TRIANGULO ISOSCELES
+6.0 | 6.0 | 10.0| TRIANGULO OBTUSANGULO TRIANGULO ISOSCELES
+5.0 | 7.0 | 2.0 | NAO FORMA TRIANGULO
+
+Dado os valores de 7.0 , 5.0 e 7.0
+Quando solicitar o tipo de triangulo
+Então o resultado será TRIANGULO ACUTANGULO TRIANGULO ISOSCELES
+
+
+Tarefas
+1. Decidir tecnologia (plataforma - Platform Specific Model) -> C99
+2. Codificar e testar
